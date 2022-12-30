@@ -1,0 +1,96 @@
+body {
+    background: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+a {
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+.main {
+    width: 30%;
+    height: 38%;
+}
+
+.mainbox {
+    top: 30%;
+    left: 31%;
+    text-align: center;
+    position: relative;
+    padding: 20px 50px;
+}
+
+.mainbox .form-login, .mainbox .form-register {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 15px;
+    background: rgba(96, 133, 255, 0.33);
+
+}
+
+.mainbox i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.mainbox .tap {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.mainbox h1 {
+    color: #ffffff;
+}
+
+.mainbox .item input {
+    margin-top: 15px;
+    width: 220px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0);
+    color: #ffffff;
+}
+
+.mainbox button {
+    width: 242px;
+    height: 35px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #fff;
+    background-color:blue;
+    border: 0;
+    /*border-radius: 15px;*/
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+/* 将back旋转180度，背面朝向用户，我这边选y轴的 */
+.back {
+    transform: rotateY(-180deg);
+}
+
+.front, .back {
+    /* 然后设置为背面朝向用户时不可见 */
+    backface-visibility: hidden;
+    /* 我觉得用linear顺滑一点 */
+    transition: 0.3s linear;
+}
+
+/* 将front旋转180度 */
+.middle-flip .front {
+    transform: rotateY(180deg) perspective(600px);
+}
+
+/* 将back旋转180度 */
+.middle-flip .back {
+    transform: rotateY(0deg) perspective(600px);
+}

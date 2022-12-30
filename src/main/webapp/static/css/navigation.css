@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menu a {
+    color: #2d3436;
+}
+
+.menu > li {
+    float: left;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #4e76ff;
+    transition: .4s;
+}
+
+.menu li a h2:hover {
+    color: white;
+}
+
+.menu .index {
+    width: 160px;
+}
+
+.menu .boa {
+    width: 280px;
+    padding: 0 30px;
+}
+
+.menu .user {
+    width: 200px;
+    font-size: 16px;
+}
+
+.menu .boa h2:hover {
+    color: white;
+}
+
+
+.boa .box1 {
+    display: none;
+}
+
+.boa .box2 {
+    display: none;
+}
+
+.boa .box3 {
+    display: none;
+}
+
+@keyframes move1 {
+
+    /*设置animation动画参数*/
+    0% {
+        /*动画开始时*/
+        height: 0px;
+    }
+
+    100% {
+        /*动画结束时*/
+        height: 250px
+    }
+}
+
+@keyframes move2 {
+
+    /*设置animation动画参数*/
+    0% {
+        /*动画开始时*/
+        height: 0px;
+    }
+
+    100% {
+        /*动画结束时*/
+        height: 200px
+    }
+}
+
+
+.boa:hover .box1 {
+    display: block;
+    height: 250px;
+    background-color: #4e76ff;
+    animation: move1 1s ease backwards;
+}
+
+.boa:hover .box2 {
+    display: block;
+    height: 200px;
+    background-color: #4e76ff;
+    animation: move2 1s ease backwards;
+}
+
+.boa:hover .box3 {
+    display: block;
+    height: 200px;
+    background-color: #4e76ff;
+    animation: move2 1s ease backwards;
+}
+
+.menu .box li:hover {
+    color: white;
+}
+
+.box {
+    overflow: hidden;
+    transition: .5s;
+    left: 20px;
+    background-color: #4e76ff;
+}
+
+.box li {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.user a:hover {
+    color: white;
+}

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HR_System:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>HR_System</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="HR_System.war">
+      <element id="artifact" artifact-name="HR_System:war exploded" />
+    </root>
+  </artifact>
+</component>
